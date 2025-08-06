@@ -1,0 +1,32 @@
+<div class="overlay">
+  <div class="signup-modal">
+    <form [formGroup]="signupform" (ngSubmit)="onsignup()">
+      <h2>Sign Up</h2>
+
+      <input type="text" placeholder="name" formControlName="name">
+      <input type="email" placeholder="Email" formControlName="email">
+      <input type="password" placeholder="Password" formControlName="password">
+      <input type="password" placeholder="Confirm Password" formControlName="confirmPassword">
+
+      <div *ngIf="signupform.invalid && submitted" class="error-msg">
+        *Please fill all valid information
+      </div>
+
+      <button type="submit">Signup</button>
+    </form>
+    <hr><div
+    style="margin: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    
+    font-size: 19px;
+    "
+    >
+        <a routerLink="/login"
+        style="text-decoration: none;"
+        >login</a>
+    </div>
+    
+  </div>
+</div>
