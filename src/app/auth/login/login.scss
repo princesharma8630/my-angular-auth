@@ -69,3 +69,30 @@ button {
     font-size: 18px;
   }
 
+
+
+  .password{
+     padding-right: 14px;
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    margin-bottom:20px ;
+  }
+  .show-btn{
+    width: 0px;
+   background-color:  #fff;
+   border:none;
+  }
+  .password input{
+    border: 0px solid white;
+    margin-bottom:0px ;
+  }
+  .password input:focus{
+    border-right:1px white;
+    
+    
+  }
+  input:focus{
+    background-color: rgb(207, 255, 207);
+  }
+

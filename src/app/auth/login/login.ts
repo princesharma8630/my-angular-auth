@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 export class Login {
 loginform :FormGroup;
 submitted =false;
+showPassword=false;
 constructor(private fb : FormBuilder)
   {
     this.loginform = this.fb.group({
