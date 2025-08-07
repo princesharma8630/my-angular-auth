@@ -9,9 +9,10 @@
         <input type="email" formControlName="email" />
     </div>
 
-    <div>
+    <div class="password">
         <label>Password:</label>
         <input type="password" formControlName="password" />
+        
     </div>
     <div *ngIf="(loginform.get('email')?.errors || loginform.get('password')?.errors )&& submitted">
         *please check password and email
